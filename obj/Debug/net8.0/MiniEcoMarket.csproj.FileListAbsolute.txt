@@ -1,0 +1,14 @@
+C:\Users\Kata\Downloads\EcoMarket\bin\Debug\net8.0\MiniEcoMarket.exe
+C:\Users\Kata\Downloads\EcoMarket\bin\Debug\net8.0\MiniEcoMarket.deps.json
+C:\Users\Kata\Downloads\EcoMarket\bin\Debug\net8.0\MiniEcoMarket.runtimeconfig.json
+C:\Users\Kata\Downloads\EcoMarket\bin\Debug\net8.0\MiniEcoMarket.dll
+C:\Users\Kata\Downloads\EcoMarket\bin\Debug\net8.0\MiniEcoMarket.pdb
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.AssemblyInfoInputs.cache
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.AssemblyInfo.cs
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.csproj.CoreCompileInputs.cache
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.dll
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\refint\MiniEcoMarket.dll
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.pdb
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\MiniEcoMarket.genruntimeconfig.cache
+C:\Users\Kata\Downloads\EcoMarket\obj\Debug\net8.0\ref\MiniEcoMarket.dll
