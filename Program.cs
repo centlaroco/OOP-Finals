@@ -34,7 +34,7 @@ namespace MiniEcoMarket
             }
 
             SaveData();
-            Console.WriteLine("\nThank you for using Mini EcoMarket! Goodbye.");
+            Console.WriteLine("\nThank you for using MiniShyt EcoMarket! Goodbye.");
         }
 
         //  Load & Save 
@@ -45,19 +45,19 @@ namespace MiniEcoMarket
             orders   = FileManager.LoadOrders();
 
             // Set ID counters so new records don't overwrite old ones
-            foreach (Farmer f   in farmers)   if (f.Id > nextUserId - 1)    nextUserId    = f.Id + 1;
-            foreach (Customer c in customers) if (c.Id > nextUserId - 1)    nextUserId    = c.Id + 1;
-            foreach (Product p  in products)  if (p.Id > nextProductId - 1) nextProductId = p.Id + 1;
-            foreach (Order o    in orders)    if (o.OrderId > nextOrderId-1) nextOrderId  = o.OrderId + 1;
+            for (int i = 0; i < farmers.Count; i++) if (farmers[i].Id > nextUserId - 1) nextUserId = farmers[i].Id + 1;
+            for (int i = 0; i < customers.Count; i++) if (customers[i].Id > nextUserId - 1) nextUserId = customers[i].Id + 1;
+            for (int i = 0; i < products.Count; i++) if (products[i].Id > nextProductId - 1) nextProductId = products[i].Id + 1;
+            for (int i = 0; i < orders.Count; i++) if (orders[i].OrderId > nextOrderId - 1) nextOrderId = orders[i].OrderId + 1;
 
             // Reattach orders to matching customers
-            foreach (Order o in orders)
+            for (int i = 0; i < orders.Count; i++)
             {
-                foreach (Customer c in customers)
+                for (int j = 0; j < customers.Count; j++)
                 {
-                    if (c.Name == o.CustomerName)
+                    if (customers[j].Name == orders[i].CustomerName)
                     {
-                        c.Orders.Add(o);
+                        customers[j].Orders.Add(orders[i]);
                         break;
                     }
                 }
@@ -133,7 +133,7 @@ namespace MiniEcoMarket
                 Customer c = new Customer(nextUserId++, name, pass);
                 customers.Add(c);
                 Console.WriteLine("Registered successfully!");
-                c.DisplayInfo();
+                c.DisplayInfo(); // Display profile after registration
             }
             catch (Exception ex)
             {
@@ -150,8 +150,9 @@ namespace MiniEcoMarket
             Console.Write("Password: ");
             string pass = Console.ReadLine();
 
-            foreach (Farmer f in farmers)
+            for(int i = 0; i < farmers.Count; i++)
             {
+                Farmer f = farmers[i];
                 if (f.Name == name && f.Password == pass)
                 {
                     loggedIn = f;
@@ -160,8 +161,9 @@ namespace MiniEcoMarket
                 }
             }
 
-            foreach (Customer c in customers)
+            for (int i = 0; i < customers.Count; i++)
             {
+                Customer c = customers[i];
                 if (c.Name == name && c.Password == pass)
                 {
                     loggedIn = c;
@@ -236,7 +238,7 @@ namespace MiniEcoMarket
         {
             Console.WriteLine("\n-- My Products --");
             bool found = false;
-            foreach (Product p in products)
+            for (int i = 0; i < products.Count; i++)
             {
                 if (p.FarmerName == farmer.Name)
                 {
@@ -256,11 +258,11 @@ namespace MiniEcoMarket
                 int id = int.Parse(Console.ReadLine());
                 Product target = null;
 
-                foreach (Product p in products)
+                for (int i = 0; i < products.Count; i++)
                 {
-                    if (p.Id == id && p.FarmerName == farmer.Name)
+                    if (products[i].Id == id && products[i].FarmerName == farmer.Name)
                     {
-                        target = p;
+                        target = products[i];
                         break;
                     }
                 }
@@ -337,8 +339,9 @@ namespace MiniEcoMarket
                 int id = int.Parse(Console.ReadLine());
                 Product target = null;
 
-                foreach (Product p in products)
+                for(int i = 0; i < products.Count; i++)
                 {
+                    Product p = products[i];
                     if (p.Id == id)
                     {
                         target = p;

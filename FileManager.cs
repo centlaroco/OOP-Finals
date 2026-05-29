@@ -48,8 +48,8 @@ namespace MiniEcoMarket
         public static void SaveOrders(List<Order> list)
         {
             StreamWriter writer = new StreamWriter(orderFile);
-            foreach (Order o in list)
-                writer.WriteLine(o.ToString());
+            for(int i = 0; i < list.Count; i++)
+                writer.WriteLine(list[i].ToString());
             writer.Close();
         }
 
@@ -76,14 +76,13 @@ namespace MiniEcoMarket
         }
 
         //  USERS (BONUS)
-
         public static void SaveUsers(List<Farmer> farmers, List<Customer> customers)
         {
             StreamWriter writer = new StreamWriter(userFile);
-            foreach (Farmer f in farmers)
-                writer.WriteLine(f.ToString());
-            foreach (Customer c in customers)
-                writer.WriteLine(c.ToString());
+            for (int i = 0; i < farmers.Count; i++)
+                writer.WriteLine(farmers[i].ToString());
+            for (int i = 0; i < customers.Count; i++)
+                writer.WriteLine(customers[i].ToString());
             writer.Close();
         }
 

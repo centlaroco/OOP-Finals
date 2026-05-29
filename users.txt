@@ -1,1 +1,2 @@
 1|Vincent|123|Vina|Farmer
+2|Test|Test123|Customer
