@@ -238,17 +238,20 @@ namespace MiniEcoMarket
         {
             Console.WriteLine("\n-- My Products --");
             bool found = false;
+
             for (int i = 0; i < products.Count; i++)
             {
-                if (p.FarmerName == farmer.Name)
+                if (products[i].FarmerName == farmer.Name)
                 {
-                    p.Display();
+                    products[i].Display();
                     found = true;
                 }
             }
-            if (!found) Console.WriteLine("You have no products listed.");
-        }
 
+            if (!found)
+                Console.WriteLine("You have no products listed.");
+        }
+        
         static void UpdateProduct(Farmer farmer)
         {
             ViewFarmerProducts(farmer);
