@@ -5,8 +5,10 @@ namespace MiniEcoMarket
     // Farmer inherits from User (Inheritance)
     public class Farmer : User
     {
+        // Unique property for farmers
         public string FarmName { get; set; }
 
+        // Constructor
         public Farmer(int id, string name, string password, string farmName)
             : base(id, name, password)
         {

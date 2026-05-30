@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniEcoMarket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+177ea7a6012c82ef2349ebe423a25f2527d70888")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf4b1dd40f4a21af160f422c0133f6e1a0183cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniEcoMarket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniEcoMarket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

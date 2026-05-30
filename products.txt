@@ -1,1 +1,2 @@
 1|Manggo|4|9|Fruits|Vincent
+2|Oten|1000|1|Oten|Martin

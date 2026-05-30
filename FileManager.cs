@@ -16,8 +16,9 @@ namespace MiniEcoMarket
         public static void SaveProducts(List<Product> list)
         {
             StreamWriter writer = new StreamWriter(productFile);
-            foreach (Product p in list)
-                writer.WriteLine(p.ToString());
+
+            for(int i = 0; i < list.Count; i++)
+                writer.WriteLine(list[i].ToString());
             writer.Close();
         }
 

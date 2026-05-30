@@ -251,7 +251,7 @@ namespace MiniEcoMarket
             if (!found)
                 Console.WriteLine("You have no products listed.");
         }
-        
+
         static void UpdateProduct(Farmer farmer)
         {
             ViewFarmerProducts(farmer);
